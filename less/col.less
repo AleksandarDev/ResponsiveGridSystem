@@ -1,0 +1,19 @@
+﻿/*  GRID COLUMN SETUP   ============================================================================= */
+
+@import "common.less";
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+
+	&:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+}
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: @fullWidthUnder) {
+	.col {
+		margin: 1% 0 1% 0;
+	}
+}
