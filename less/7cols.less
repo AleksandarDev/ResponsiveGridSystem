@@ -1,0 +1,44 @@
+﻿@import "common.less";
+
+@columns: 7;
+
+.span_1_of_7 { .calculateSpan(@columns, 1); }
+.span_2_of_7 { .calculateSpan(@columns, 2); }
+.span_3_of_7 { .calculateSpan(@columns, 3); }
+.span_4_of_7 { .calculateSpan(@columns, 4); }
+.span_5_of_7 { .calculateSpan(@columns, 5); }
+.span_6_of_7 { .calculateSpan(@columns, 6); }
+.span_7_of_7 { .calculateSpan(@columns, 7); }
+
+.col.offset_1_of_7 { .calculateOffset(@columns, 1); }
+.col.offset_2_of_7 { .calculateOffset(@columns, 2); }
+.col.offset_3_of_7 { .calculateOffset(@columns, 3); }
+.col.offset_4_of_7 { .calculateOffset(@columns, 4); }
+.col.offset_5_of_7 { .calculateOffset(@columns, 5); }
+.col.offset_6_of_7 { .calculateOffset(@columns, 6); }
+.col.offset_7_of_7 { .calculateOffset(@columns, 7); }
+
+
+/*  GO FULL WIDTH  */
+
+@media only screen and (max-width: @fullWidthUnder) {
+	.span_7_of_7,
+	.span_6_of_7,
+	.span_5_of_7,
+	.span_4_of_7,
+	.span_3_of_7,
+	.span_2_of_7,
+	.span_1_of_7 {
+		width: 100%;
+	}
+
+	.col.offset_7_of_7,
+	.col.offset_6_of_7,
+	.col.offset_5_of_7,
+	.col.offset_4_of_7,
+	.col.offset_3_of_7,
+	.col.offset_2_of_7,
+	.col.offset_1_of_7 {
+		margin: 1% 0 1% 0;
+	}
+}

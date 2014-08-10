@@ -1,0 +1,22 @@
+﻿@margin: 1.016%;
+@fullWidthUnder: 480px;
+
+.calculateSpan(@totalColumns, @spanAmount) when (@totalColumns = @spanAmount) {
+	width: 100%;
+}
+
+.calculateSpan(@totalColumns, @spanAmount) when not (@totalColumns = @spanAmount) {
+	@difference: (10 / @totalColumns) * (@margin * 10);
+
+	width: 100% - ((@totalColumns - @spanAmount) * @difference);
+}
+
+.calculateOffset(@totalColumns, @offsetAmount) when (@totalColumns = @offsetAmount) {
+	margin-left: 100%;
+}
+
+.calculateOffset(@totalColumns, @offsetAmount) when not (@totalColumns = @offsetAmount) {
+	@difference: (10 / @totalColumns) * (@margin * 10);
+
+	margin-left: 100% - ((@totalColumns - @offsetAmount) * @difference) + @margin;
+}

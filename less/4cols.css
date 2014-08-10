@@ -1,0 +1,39 @@
+﻿.span_1_of_4 {
+  width: 23.8%;
+}
+.span_2_of_4 {
+  width: 49.2%;
+}
+.span_3_of_4 {
+  width: 74.6%;
+}
+.span_4_of_4 {
+  width: 100%;
+}
+.col.offset_1_of_4 {
+  margin-left: 24.816%;
+}
+.col.offset_2_of_4 {
+  margin-left: 50.216%;
+}
+.col.offset_3_of_4 {
+  margin-left: 75.616%;
+}
+.col.offset_4_of_4 {
+  margin-left: 100%;
+}
+/*  GO FULL WIDTH  */
+@media only screen and (max-width: 480px) {
+  .span_4_of_4,
+  .span_3_of_4,
+  .span_2_of_4,
+  .span_1_of_4 {
+    width: 100%;
+  }
+  .col.offset_4_of_4,
+  .col.offset_3_of_4,
+  .col.offset_2_of_4,
+  .col.offset_1_of_4 {
+    margin: 1% 0 1% 0;
+  }
+}

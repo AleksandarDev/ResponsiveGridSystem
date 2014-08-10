@@ -1,0 +1,80 @@
+@import "common.less";
+
+@columns: 16;
+
+.span_1_of_16 { .calculateSpan(@columns, 1); }
+.span_2_of_16 { .calculateSpan(@columns, 2); }
+.span_3_of_16 { .calculateSpan(@columns, 3); }
+.span_4_of_16 { .calculateSpan(@columns, 4); }
+.span_5_of_16 { .calculateSpan(@columns, 5); }
+.span_6_of_16 { .calculateSpan(@columns, 6); }
+.span_7_of_16 { .calculateSpan(@columns, 7); }
+.span_8_of_16 { .calculateSpan(@columns, 8); }
+.span_9_of_16 { .calculateSpan(@columns, 9); }
+.span_10_of_16 { .calculateSpan(@columns, 10); }
+.span_11_of_16 { .calculateSpan(@columns, 11); }
+.span_12_of_16 { .calculateSpan(@columns, 12); }
+.span_13_of_16 { .calculateSpan(@columns, 13); }
+.span_14_of_16 { .calculateSpan(@columns, 14); }
+.span_15_of_16 { .calculateSpan(@columns, 15); }
+.span_16_of_16 { .calculateSpan(@columns, 16); }
+
+.col.offset_1_of_16 { .calculateOffset(@columns, 1); }
+.col.offset_2_of_16 { .calculateOffset(@columns, 2); }
+.col.offset_3_of_16 { .calculateOffset(@columns, 3); }
+.col.offset_4_of_16 { .calculateOffset(@columns, 4); }
+.col.offset_5_of_16 { .calculateOffset(@columns, 5); }
+.col.offset_6_of_16 { .calculateOffset(@columns, 6); }
+.col.offset_7_of_16 { .calculateOffset(@columns, 7); }
+.col.offset_8_of_16 { .calculateOffset(@columns, 8); }
+.col.offset_9_of_16 { .calculateOffset(@columns, 9); }
+.col.offset_10_of_16 { .calculateOffset(@columns, 10); }
+.col.offset_11_of_16 { .calculateOffset(@columns, 11); }
+.col.offset_12_of_16 { .calculateOffset(@columns, 12); }
+.col.offset_13_of_16 { .calculateOffset(@columns, 13); }
+.col.offset_14_of_16 { .calculateOffset(@columns, 14); }
+.col.offset_15_of_16 { .calculateOffset(@columns, 15); }
+.col.offset_16_of_16 { .calculateOffset(@columns, 16); }
+
+
+/*  GO FULL WIDTH  */
+
+@media only screen and (max-width: @fullWidthUnder) {
+	.span_16_of_16,
+	.span_15_of_16,
+	.span_14_of_16,
+	.span_13_of_16,
+	.span_12_of_16,
+	.span_11_of_16,
+	.span_10_of_16,
+	.span_9_of_16,
+	.span_8_of_16,
+	.span_7_of_16,
+	.span_6_of_16,
+	.span_5_of_16,
+	.span_4_of_16,
+	.span_3_of_16,
+	.span_2_of_16,
+	.span_1_of_16 {
+		width: 100%;
+	}
+
+	.col.offset_16_of_16,
+	.col.offset_15_of_16,
+	.col.offset_14_of_16,
+	.col.offset_13_of_16,
+	.col.offset_12_of_16,
+	.col.offset_11_of_16,
+	.col.offset_10_of_16,
+	.col.offset_9_of_16,
+	.col.offset_8_of_16,
+	.col.offset_7_of_16,
+	.col.offset_6_of_16,
+	.col.offset_5_of_16,
+	.col.offset_4_of_16,
+	.col.offset_3_of_16,
+	.col.offset_2_of_16,
+	.col.offset_1_of_16 {
+		margin: 1% 0 1% 0;
+	}
+}

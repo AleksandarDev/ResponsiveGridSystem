@@ -1,0 +1,28 @@
+@import "common.less";
+
+@columns: 3;
+
+.span_1_of_3 { .calculateSpan(@columns, 1); }
+.span_2_of_3 { .calculateSpan(@columns, 2); }
+.span_3_of_3 { .calculateSpan(@columns, 3); }
+
+.col.offset_1_of_3 { .calculateOffset(@columns, 1); }
+.col.offset_2_of_3 { .calculateOffset(@columns, 2); }
+.col.offset_3_of_3 { .calculateOffset(@columns, 3); }
+
+
+/*  GO FULL WIDTH  */
+
+@media only screen and (max-width: @fullWidthUnder) {
+	.span_3_of_3,
+	.span_2_of_3,
+	.span_1_of_3 {
+		width: 100%;
+	}
+
+	.col.offset_3_of_3,
+	.col.offset_2_of_3,
+	.col.offset_1_of_3 {
+		margin: 1% 0 1% 0;
+	}
+}

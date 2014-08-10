@@ -1,0 +1,135 @@
+﻿.span_1_of_16 {
+  width: 4.75%;
+}
+.span_2_of_16 {
+  width: 11.1%;
+}
+.span_3_of_16 {
+  width: 17.45%;
+}
+.span_4_of_16 {
+  width: 23.8%;
+}
+.span_5_of_16 {
+  width: 30.15%;
+}
+.span_6_of_16 {
+  width: 36.5%;
+}
+.span_7_of_16 {
+  width: 42.85%;
+}
+.span_8_of_16 {
+  width: 49.2%;
+}
+.span_9_of_16 {
+  width: 55.55%;
+}
+.span_10_of_16 {
+  width: 61.9%;
+}
+.span_11_of_16 {
+  width: 68.25%;
+}
+.span_12_of_16 {
+  width: 74.6%;
+}
+.span_13_of_16 {
+  width: 80.95%;
+}
+.span_14_of_16 {
+  width: 87.3%;
+}
+.span_15_of_16 {
+  width: 93.65%;
+}
+.span_16_of_16 {
+  width: 100%;
+}
+.col.offset_1_of_16 {
+  margin-left: 5.766%;
+}
+.col.offset_2_of_16 {
+  margin-left: 12.116%;
+}
+.col.offset_3_of_16 {
+  margin-left: 18.466%;
+}
+.col.offset_4_of_16 {
+  margin-left: 24.816%;
+}
+.col.offset_5_of_16 {
+  margin-left: 31.166%;
+}
+.col.offset_6_of_16 {
+  margin-left: 37.516%;
+}
+.col.offset_7_of_16 {
+  margin-left: 43.866%;
+}
+.col.offset_8_of_16 {
+  margin-left: 50.216%;
+}
+.col.offset_9_of_16 {
+  margin-left: 56.566%;
+}
+.col.offset_10_of_16 {
+  margin-left: 62.916%;
+}
+.col.offset_11_of_16 {
+  margin-left: 69.266%;
+}
+.col.offset_12_of_16 {
+  margin-left: 75.616%;
+}
+.col.offset_13_of_16 {
+  margin-left: 81.966%;
+}
+.col.offset_14_of_16 {
+  margin-left: 88.316%;
+}
+.col.offset_15_of_16 {
+  margin-left: 94.666%;
+}
+.col.offset_16_of_16 {
+  margin-left: 100%;
+}
+/*  GO FULL WIDTH  */
+@media only screen and (max-width: 480px) {
+  .span_16_of_16,
+  .span_15_of_16,
+  .span_14_of_16,
+  .span_13_of_16,
+  .span_12_of_16,
+  .span_11_of_16,
+  .span_10_of_16,
+  .span_9_of_16,
+  .span_8_of_16,
+  .span_7_of_16,
+  .span_6_of_16,
+  .span_5_of_16,
+  .span_4_of_16,
+  .span_3_of_16,
+  .span_2_of_16,
+  .span_1_of_16 {
+    width: 100%;
+  }
+  .col.offset_16_of_16,
+  .col.offset_15_of_16,
+  .col.offset_14_of_16,
+  .col.offset_13_of_16,
+  .col.offset_12_of_16,
+  .col.offset_11_of_16,
+  .col.offset_10_of_16,
+  .col.offset_9_of_16,
+  .col.offset_8_of_16,
+  .col.offset_7_of_16,
+  .col.offset_6_of_16,
+  .col.offset_5_of_16,
+  .col.offset_4_of_16,
+  .col.offset_3_of_16,
+  .col.offset_2_of_16,
+  .col.offset_1_of_16 {
+    margin: 1% 0 1% 0;
+  }
+}

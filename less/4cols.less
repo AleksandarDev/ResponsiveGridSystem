@@ -1,0 +1,32 @@
+@import "common.less";
+
+@columns: 4;
+
+.span_1_of_4 { .calculateSpan(@columns, 1); }
+.span_2_of_4 { .calculateSpan(@columns, 2); }
+.span_3_of_4 { .calculateSpan(@columns, 3); }
+.span_4_of_4 { .calculateSpan(@columns, 4); }
+
+.col.offset_1_of_4 { .calculateOffset(@columns, 1); }
+.col.offset_2_of_4 { .calculateOffset(@columns, 2); }
+.col.offset_3_of_4 { .calculateOffset(@columns, 3); }
+.col.offset_4_of_4 { .calculateOffset(@columns, 4); }
+
+
+/*  GO FULL WIDTH  */
+
+@media only screen and (max-width: @fullWidthUnder) {
+	.span_4_of_4,
+	.span_3_of_4,
+	.span_2_of_4,
+	.span_1_of_4 {
+		width: 100%;
+	}
+
+	.col.offset_4_of_4,
+	.col.offset_3_of_4,
+	.col.offset_2_of_4,
+	.col.offset_1_of_4 {
+		margin: 1% 0 1% 0;
+	}
+}
